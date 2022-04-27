@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+
 :root {
     --button-color: #646464;
 }
@@ -6,6 +8,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
 .first-row-container {
@@ -62,9 +68,48 @@
 .settings-container {
     background-color: #222222;
     height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .column-layout {
     display: flex; 
+    color: white;
+    /* padding: 0 .7rem; */
+}
 
+.col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    padding: 0 .7rem;
+    justify-content: center;;
+}
+
+.col-left i {
+    font-size: 1.4rem;
+}
+
+.fa-share-from-square:before {
+    color: rgb(78, 199, 0);
+}
+
+.col-left span {
+    font-size: .8rem;
+}
+
+.col-right {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    font-size: .6rem;
+}
+
+.end-meeting-container {
+    color: red;
+    background-color: rgb(73, 73, 73);
+    height: 100%;
+    vertical-align: center;
 }

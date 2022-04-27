@@ -1,5 +1,70 @@
+:root {
+    --button-color: #646464;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.first-row-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .3rem;
+    padding: .3rem;
+    background-color: black;
+    height: 4vh;
+}
+
+
+.first-row-button-formattings {
+    background-color: var(--button-color);
+    padding: .2rem;
+    color: white;
+    border-radius: .3rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.user-video {
+    position: relative;
+    width: calc((100% / 7) - (.2rem));
+    height: calc((100% / 5) - (.3rem));
+    display: flex;
+    overflow: hidden;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .2rem .1rem;
+    color: white;
+    background-color: rgba(165, 165, 165, 0.46);
+    font-size: .7rem;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    height: 88vh;
+    gap: .4rem .2rem;
+}
+
+/* last-part settings */
+
+.settings-container {
+    background-color: #222222;
+    height: 8vh;
+}
+
+.column-layout {
+    display: flex; 
+
 }
